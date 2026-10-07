@@ -11,7 +11,8 @@ public class DatabaseConnection {
     private static final String DB_PORT = "3306";
     private static final String DB_NAME = "consultancy_db";
     private static final String DB_USER = "root";
-    private static final String DB_PASSWORD = "root";
+    private static final String DB_PASSWORD =
+     System.getenv().getOrDefault("CMS_DB_PASSWORD", "");
 
     private static final String SERVER_URL =
             "jdbc:mysql://" + DB_HOST + ":" + DB_PORT + "/";
