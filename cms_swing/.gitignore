@@ -18,3 +18,6 @@ Thumbs.db
 
 # Project ZIP files
 *.zip
+
+# Resources if not required in Git
+cms_swing/src/main/resources/
